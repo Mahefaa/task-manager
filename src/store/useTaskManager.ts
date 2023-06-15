@@ -29,7 +29,7 @@ const useTaskManager = create<TaskManagerState>((set) => {
     }
 
     return ({
-        tasks: [],
+        tasks: savedTasks(),
         searchTask: "",
         addTask: (task) => {
             set((state) => {
